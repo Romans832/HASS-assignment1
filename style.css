@@ -1,0 +1,73 @@
+/* default styling. Nothing to do with freexing first row and column */
+main {display: flex;}
+main > * {border: 1px solid;}
+table {border-collapse: border; font-family: helvetica}
+
+pre {
+    text-align: center;
+    white-space: pre-line;
+  }
+
+h1 {
+	color: #30363a;
+	font: 700 2.5rem/3.25rem "Open Sans", sans-serif;
+	letter-spacing: -0.5px;
+    padding-top: 3rem;
+}
+
+h2 {
+	color: #30363a;
+	font: 550 1.5rem/2rem "Open Sans", sans-serif;
+	letter-spacing: -0.125px;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+	color: #30363a;
+	font: 400 1rem/1.75rem "Open Sans", sans-serif;
+}
+
+td, th {border:  1px solid;
+      padding: 10px;
+      min-width: 50px;
+      background: white;
+      box-sizing: border-box;
+      text-align: left;
+}
+.table-container {
+  position: relative;
+  max-height:  300px;
+  width: 100px;
+  overflow: scroll;
+}
+
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
+}
+
+tfoot {
+  position: -webkit-sticky;
+  bottom: 0;
+  z-index: 2;
+}
+
+tr:nth-last-child(1) {
+  border: 3px solid;
+}
+
+tfoot td {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
+}
+
+tbody {
+  overflow: scroll;
+  height: 200px;
+}
+
